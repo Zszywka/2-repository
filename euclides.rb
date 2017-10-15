@@ -20,8 +20,8 @@ while a != b
    p a
 end
 
-if ARGV.size != 2
-  puts"wrong number"
-else
-  puts gcd (ARGV[0].to_i , ARGV[1].to_i)
-end
+# if ARGV.size != 2
+#   puts"wrong number"
+# else
+#   puts gcd (ARGV[0].to_i , ARGV[1].to_i)
+# end
