@@ -3,11 +3,11 @@
 # wykorzystując algorytm Euklidesa
 #(https://pl.wikipedia.org/wiki/Algorytm_Euklidesa).
 
-print "ruby gcd.rb  "
-a = gets.to_i
-b = gets.to_i
 
+# a = gets.to_i
+# b = gets.to_i
 
+def gdc(a,b)
 while a != b
   if a > b
     a = a - b
@@ -18,4 +18,10 @@ while a != b
   end
  if a == b
    p a
+end
+
+if ARGV.size != 2
+  puts"wrong number"
+else
+  puts gcd (ARGV[0].to_i , ARGV[1].to_i)
 end

@@ -39,3 +39,18 @@ while i <= n
     i +=2
 end
 p sum
+
+def even_sum1(n)
+  (2..n).selct {|e| e%2 == 0}.sum
+end
+
+def even_sum4(n)
+(2..n).step(2).sum
+end
+
+def even_sum3(n)   # ilosc kroków nie uzaleniona od n
+  n = n / 2
+  n * (n + 1)
+end
+
+puts even_sum1(10)
